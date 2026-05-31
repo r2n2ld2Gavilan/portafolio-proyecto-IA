@@ -1,0 +1,132 @@
+:root {
+    --primary: #0d6efd;
+    --purple: #6f42c1;
+}
+
+[data-bs-theme="dark"] {
+    --primary: #0d6efd;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.glass-navbar {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+[data-bs-theme="dark"] .glass-navbar {
+    background: rgba(30, 30, 46, 0.85);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.hero-section {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e0f0ff 100%);
+    padding-top: 80px;
+}
+
+[data-bs-theme="dark"] .hero-section {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+}
+
+.profile-card {
+    background: white;
+    border-radius: 24px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+[data-bs-theme="dark"] .profile-card {
+    background: #212529;
+}
+
+.avatar {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #fff;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    margin-bottom: 1rem;
+}
+
+.section-title {
+    font-weight: 700;
+    margin-bottom: 3rem;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background: var(--primary);
+    border-radius: 2px;
+}
+
+.skill-card, .project-card {
+    background: white;
+    border-radius: 20px;
+    padding: 1.5rem;
+    height: 100%;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+[data-bs-theme="dark"] .skill-card,
+[data-bs-theme="dark"] .project-card {
+    background: #212529;
+}
+
+.skill-card:hover, .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.project-img {
+    height: 200px;
+    border-radius: 20px 20px 0 0;
+}
+
+.tech-chips .badge {
+    margin: 3px;
+    font-size: 0.85rem;
+}
+
+.social-links a {
+    color: #6c757d;
+    transition: all 0.3s;
+}
+
+.social-links a:hover {
+    color: var(--primary);
+    transform: translateY(-3px);
+}[data-bs-theme="dark"] #contacto,
+[data-bs-theme="dark"] #contacto .section-title,
+[data-bs-theme="dark"] #contacto .form-label {
+    color: #000;
+}
+[data-bs-theme="dark"] #habilidades,
+[data-bs-theme="dark"] #habilidades .section-title {
+    color: #000;
+}
+[data-bs-theme="dark"] #habilidades .skill-card {
+    background-color: #fff;
+    color: #000;
+}
+
+[data-bs-theme="dark"] #habilidades .skill-card h4,
+[data-bs-theme="dark"] #habilidades .skill-card p {
+    color: #000;
+}
+[data-bs-theme="light"] .tech-chips .badge {
+    color: #000 !important;
+}
